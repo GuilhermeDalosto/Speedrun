@@ -8,6 +8,9 @@
 import Foundation
 
 protocol ViewProtocol {
-    associatedtype Presenter: PresenterProtocol    
-    var presenter: Presenter { get }
+    associatedtype Presenter: PresenterProtocol
+    
+    var presenter: Presenter! { get }
+    
+    func bindUI()
 }

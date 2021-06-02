@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DD3DD29226667B4000BAC900 /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3DD29026667B4000BAC900 /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3DD2BE26667DC700BAC900 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2BD26667DC700BAC900 /* Run.swift */; };
+		DDC31DCF26680711004F88A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31DCE26680711004F88A2 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		DD3DD29026667B4000BAC900 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		DD3DD29126667B4000BAC900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3DD2BD26667DC700BAC900 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		DDC31DCE26680711004F88A2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3DD2BD26667DC700BAC900 /* Run.swift */,
+				DDC31DCE26680711004F88A2 /* User.swift */,
 				DD3DD2B926667C4A00BAC900 /* Metadata */,
 			);
 			path = Model;
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC31DCF26680711004F88A2 /* User.swift in Sources */,
 				DD3DD2BE26667DC700BAC900 /* Run.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

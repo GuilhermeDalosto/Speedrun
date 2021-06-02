@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,29 @@
 		DDC31D992667FDD5004F88A2 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31D982667FDD5004F88A2 /* InteractorProtocol.swift */; };
 		DDC31D9D2667FE73004F88A2 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31D9C2667FE73004F88A2 /* ViewProtocol.swift */; };
 		DDC31DAF26680138004F88A2 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31DAE26680138004F88A2 /* Metrics.swift */; };
+		DDC31DB6266803B8004F88A2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DDC31DB5266803B8004F88A2 /* RxSwift */; };
+		DDC31DB8266803B8004F88A2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DDC31DB7266803B8004F88A2 /* RxCocoa */; };
+		DDC31DC0266805DB004F88A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31DBF266805DB004F88A2 /* LoginViewController.swift */; };
+		DDC31DC526680651004F88A2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31DC426680651004F88A2 /* LoginView.swift */; };
+		DDC31DC9266806C7004F88A2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31DC8266806C7004F88A2 /* LoginPresenter.swift */; };
+		DDC31DCC266806EF004F88A2 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31DCB266806EF004F88A2 /* LoginInteractor.swift */; };
+		DDC31DD426680743004F88A2 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC31DD326680743004F88A2 /* Model.framework */; };
+		DDC31DD526680743004F88A2 /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDC31DD326680743004F88A2 /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDC31DD626680743004F88A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DDC31DD526680743004F88A2 /* Model.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DD3DD2A326667B9B00BAC900 /* Scenes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scenes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +58,11 @@
 		DDC31D982667FDD5004F88A2 /* InteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
 		DDC31D9C2667FE73004F88A2 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		DDC31DAE26680138004F88A2 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		DDC31DBF266805DB004F88A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DDC31DC426680651004F88A2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DDC31DC8266806C7004F88A2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		DDC31DCB266806EF004F88A2 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		DDC31DD326680743004F88A2 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC31DB8266803B8004F88A2 /* RxCocoa in Frameworks */,
+				DDC31DD426680743004F88A2 /* Model.framework in Frameworks */,
+				DDC31DB6266803B8004F88A2 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +84,7 @@
 			children = (
 				DD3DD2A526667B9B00BAC900 /* Scenes */,
 				DD3DD2A426667B9B00BAC900 /* Products */,
+				DDC31DD226680743004F88A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,11 +99,8 @@
 		DD3DD2A526667B9B00BAC900 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DD3DD2EC2666864300BAC900 /* AppCoordinator.swift */,
-				DD3DD2E42666847D00BAC900 /* Protocols */,
-				DDC31D942667FD70004F88A2 /* VIPER */,
-				DD3DD2FD2666910400BAC900 /* Extensions */,
-				DDC31D8F2667FC84004F88A2 /* Utils */,
+				DDC31DBD266805C2004F88A2 /* Login */,
+				DDC31DBE266805C6004F88A2 /* Resources */,
 				DD3DD2BC26667CBE00BAC900 /* Metadata */,
 			);
 			path = Scenes;
@@ -125,6 +153,37 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
+		DDC31DBD266805C2004F88A2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DDC31DBF266805DB004F88A2 /* LoginViewController.swift */,
+				DDC31DC426680651004F88A2 /* LoginView.swift */,
+				DDC31DC8266806C7004F88A2 /* LoginPresenter.swift */,
+				DDC31DCB266806EF004F88A2 /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DDC31DBE266805C6004F88A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD3DD2EC2666864300BAC900 /* AppCoordinator.swift */,
+				DD3DD2E42666847D00BAC900 /* Protocols */,
+				DDC31D942667FD70004F88A2 /* VIPER */,
+				DD3DD2FD2666910400BAC900 /* Extensions */,
+				DDC31D8F2667FC84004F88A2 /* Utils */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDC31DD226680743004F88A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDC31DD326680743004F88A2 /* Model.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -147,12 +206,17 @@
 				DD3DD29F26667B9B00BAC900 /* Sources */,
 				DD3DD2A026667B9B00BAC900 /* Frameworks */,
 				DD3DD2A126667B9B00BAC900 /* Resources */,
+				DDC31DD626680743004F88A2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Scenes;
+			packageProductDependencies = (
+				DDC31DB5266803B8004F88A2 /* RxSwift */,
+				DDC31DB7266803B8004F88A2 /* RxCocoa */,
+			);
 			productName = Scenes;
 			productReference = DD3DD2A326667B9B00BAC900 /* Scenes.framework */;
 			productType = "com.apple.product-type.framework";
@@ -180,6 +244,9 @@
 				Base,
 			);
 			mainGroup = DD3DD29926667B9B00BAC900;
+			packageReferences = (
+				DDC31DB4266803B8004F88A2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = DD3DD2A426667B9B00BAC900 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -206,14 +273,18 @@
 			files = (
 				DD3DD303266691A000BAC900 /* URL.swift in Sources */,
 				DD3DD2ED2666864300BAC900 /* AppCoordinator.swift in Sources */,
+				DDC31DC9266806C7004F88A2 /* LoginPresenter.swift in Sources */,
 				DDC31DAF26680138004F88A2 /* Metrics.swift in Sources */,
 				DDC31D8D2667FBDF004F88A2 /* Dispatcher.swift in Sources */,
 				DDC31D912667FC95004F88A2 /* LocalizedString.swift in Sources */,
 				DDC31D962667FDB0004F88A2 /* PresenterProtocol.swift in Sources */,
 				DDC31D992667FDD5004F88A2 /* InteractorProtocol.swift in Sources */,
+				DDC31DCC266806EF004F88A2 /* LoginInteractor.swift in Sources */,
 				DDC31D9D2667FE73004F88A2 /* ViewProtocol.swift in Sources */,
 				DD3DD2E6266684B700BAC900 /* Coordinator.swift in Sources */,
 				DD3DD2E2266683F100BAC900 /* Drawable.swift in Sources */,
+				DDC31DC526680651004F88A2 /* LoginView.swift in Sources */,
+				DDC31DC0266805DB004F88A2 /* LoginViewController.swift in Sources */,
 				DD3DD2FF2666911E00BAC900 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +487,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDC31DB4266803B8004F88A2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDC31DB5266803B8004F88A2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDC31DB4266803B8004F88A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		DDC31DB7266803B8004F88A2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDC31DB4266803B8004F88A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD3DD29A26667B9B00BAC900 /* Project object */;
 }
