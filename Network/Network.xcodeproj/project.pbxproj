@@ -10,6 +10,7 @@
 		DD3DD251266679E300BAC900 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3DD24F266679E300BAC900 /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3DD2DA2666804F00BAC900 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2D92666804F00BAC900 /* NetworkRouter.swift */; };
 		DD3DD2DD266681F300BAC900 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2DC266681F300BAC900 /* Address.swift */; };
+		DD3DD2FA26668EF700BAC900 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2F926668EF700BAC900 /* Serialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		DD3DD250266679E300BAC900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3DD2D92666804F00BAC900 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		DD3DD2DC266681F300BAC900 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		DD3DD2F926668EF700BAC900 /* Serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			children = (
 				DD3DD2D92666804F00BAC900 /* NetworkRouter.swift */,
 				DD3DD2DC266681F300BAC900 /* Address.swift */,
+				DD3DD2F926668EF700BAC900 /* Serialization.swift */,
 				DD3DD27026667A9F00BAC900 /* Metadata */,
 			);
 			path = Network;
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3DD2DD266681F300BAC900 /* Address.swift in Sources */,
+				DD3DD2FA26668EF700BAC900 /* Serialization.swift in Sources */,
 				DD3DD2DA2666804F00BAC900 /* NetworkRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

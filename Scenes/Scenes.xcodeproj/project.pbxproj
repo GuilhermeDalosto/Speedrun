@@ -11,6 +11,14 @@
 		DD3DD2E2266683F100BAC900 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2E1266683F100BAC900 /* Drawable.swift */; };
 		DD3DD2E6266684B700BAC900 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2E5266684B700BAC900 /* Coordinator.swift */; };
 		DD3DD2ED2666864300BAC900 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2EC2666864300BAC900 /* AppCoordinator.swift */; };
+		DD3DD2FF2666911E00BAC900 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2FE2666911E00BAC900 /* UIView+Constraints.swift */; };
+		DD3DD303266691A000BAC900 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD302266691A000BAC900 /* URL.swift */; };
+		DDC31D8D2667FBDF004F88A2 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31D8C2667FBDF004F88A2 /* Dispatcher.swift */; };
+		DDC31D912667FC95004F88A2 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31D902667FC95004F88A2 /* LocalizedString.swift */; };
+		DDC31D962667FDB0004F88A2 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31D952667FDB0004F88A2 /* PresenterProtocol.swift */; };
+		DDC31D992667FDD5004F88A2 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31D982667FDD5004F88A2 /* InteractorProtocol.swift */; };
+		DDC31D9D2667FE73004F88A2 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31D9C2667FE73004F88A2 /* ViewProtocol.swift */; };
+		DDC31DAF26680138004F88A2 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC31DAE26680138004F88A2 /* Metrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		DD3DD2E1266683F100BAC900 /* Drawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
 		DD3DD2E5266684B700BAC900 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DD3DD2EC2666864300BAC900 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DD3DD2FE2666911E00BAC900 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		DD3DD302266691A000BAC900 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		DDC31D8C2667FBDF004F88A2 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		DDC31D902667FC95004F88A2 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		DDC31D952667FDB0004F88A2 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
+		DDC31D982667FDD5004F88A2 /* InteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
+		DDC31D9C2667FE73004F88A2 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		DDC31DAE26680138004F88A2 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,9 @@
 			children = (
 				DD3DD2EC2666864300BAC900 /* AppCoordinator.swift */,
 				DD3DD2E42666847D00BAC900 /* Protocols */,
+				DDC31D942667FD70004F88A2 /* VIPER */,
+				DD3DD2FD2666910400BAC900 /* Extensions */,
+				DDC31D8F2667FC84004F88A2 /* Utils */,
 				DD3DD2BC26667CBE00BAC900 /* Metadata */,
 			);
 			path = Scenes;
@@ -75,6 +94,35 @@
 				DD3DD2E5266684B700BAC900 /* Coordinator.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DD3DD2FD2666910400BAC900 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD3DD302266691A000BAC900 /* URL.swift */,
+				DD3DD2FE2666911E00BAC900 /* UIView+Constraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DDC31D8F2667FC84004F88A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DDC31DAE26680138004F88A2 /* Metrics.swift */,
+				DDC31D8C2667FBDF004F88A2 /* Dispatcher.swift */,
+				DDC31D902667FC95004F88A2 /* LocalizedString.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DDC31D942667FD70004F88A2 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				DDC31D9C2667FE73004F88A2 /* ViewProtocol.swift */,
+				DDC31D982667FDD5004F88A2 /* InteractorProtocol.swift */,
+				DDC31D952667FDB0004F88A2 /* PresenterProtocol.swift */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3DD303266691A000BAC900 /* URL.swift in Sources */,
 				DD3DD2ED2666864300BAC900 /* AppCoordinator.swift in Sources */,
+				DDC31DAF26680138004F88A2 /* Metrics.swift in Sources */,
+				DDC31D8D2667FBDF004F88A2 /* Dispatcher.swift in Sources */,
+				DDC31D912667FC95004F88A2 /* LocalizedString.swift in Sources */,
+				DDC31D962667FDB0004F88A2 /* PresenterProtocol.swift in Sources */,
+				DDC31D992667FDD5004F88A2 /* InteractorProtocol.swift in Sources */,
+				DDC31D9D2667FE73004F88A2 /* ViewProtocol.swift in Sources */,
 				DD3DD2E6266684B700BAC900 /* Coordinator.swift in Sources */,
 				DD3DD2E2266683F100BAC900 /* Drawable.swift in Sources */,
+				DD3DD2FF2666911E00BAC900 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
