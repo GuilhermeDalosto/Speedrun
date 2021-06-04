@@ -10,6 +10,10 @@
 		DD3DD267266679FD00BAC900 /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3DD265266679FD00BAC900 /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3DD2F0266687A100BAC900 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2EF266687A100BAC900 /* LocalStorage.swift */; };
 		DD3DD2F6266687DD00BAC900 /* LocalStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD2F5266687DD00BAC900 /* LocalStorageKeys.swift */; };
+		DDEF388B266A71D700B2A7C3 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = DDEF388A266A71D700B2A7C3 /* Users.json */; };
+		DDEF38A1266A73B500B2A7C3 /* UsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEF38A0266A73B500B2A7C3 /* UsersProvider.swift */; };
+		DDEF38AC266A743100B2A7C3 /* Bundle+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEF38AB266A743100B2A7C3 /* Bundle+Json.swift */; };
+		DDEF38BF266A795D00B2A7C3 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEF38BE266A795D00B2A7C3 /* Provider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +22,10 @@
 		DD3DD266266679FD00BAC900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3DD2EF266687A100BAC900 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		DD3DD2F5266687DD00BAC900 /* LocalStorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageKeys.swift; sourceTree = "<group>"; };
+		DDEF388A266A71D700B2A7C3 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		DDEF38A0266A73B500B2A7C3 /* UsersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProvider.swift; sourceTree = "<group>"; };
+		DDEF38AB266A743100B2A7C3 /* Bundle+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Json.swift"; sourceTree = "<group>"; };
+		DDEF38BE266A795D00B2A7C3 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +58,10 @@
 		DD3DD264266679FD00BAC900 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				DDEF389F266A73AD00B2A7C3 /* Provider */,
+				DDEF3889266A71BC00B2A7C3 /* Mock */,
 				DD3DD2F4266687CE00BAC900 /* Local */,
+				DDEF38A7266A73FF00B2A7C3 /* Extensions */,
 				DD3DD27126667AA900BAC900 /* Metadata */,
 			);
 			path = Storage;
@@ -72,6 +83,31 @@
 				DD3DD2F5266687DD00BAC900 /* LocalStorageKeys.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		DDEF3889266A71BC00B2A7C3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DDEF388A266A71D700B2A7C3 /* Users.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		DDEF389F266A73AD00B2A7C3 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				DDEF38BE266A795D00B2A7C3 /* Provider.swift */,
+				DDEF38A0266A73B500B2A7C3 /* UsersProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		DDEF38A7266A73FF00B2A7C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DDEF38AB266A743100B2A7C3 /* Bundle+Json.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEF388B266A71D700B2A7C3 /* Users.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +192,9 @@
 			files = (
 				DD3DD2F0266687A100BAC900 /* LocalStorage.swift in Sources */,
 				DD3DD2F6266687DD00BAC900 /* LocalStorageKeys.swift in Sources */,
+				DDEF38A1266A73B500B2A7C3 /* UsersProvider.swift in Sources */,
+				DDEF38BF266A795D00B2A7C3 /* Provider.swift in Sources */,
+				DDEF38AC266A743100B2A7C3 /* Bundle+Json.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
